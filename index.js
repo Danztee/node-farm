@@ -1,8 +1,11 @@
 const fs = require("fs");
 const http = require("http");
 const url = require("url");
+const slugify = require("slugify");
 
 const replaceTemplate = require("./modules/replaceTemplate");
+
+// console.log(slugify("fresh Tomatoes", { lower: true }));
 
 //---- blocking sync way
 // const textIn = fs.readFileSync("./txt/input.txt", "utf-8");
